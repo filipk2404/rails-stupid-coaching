@@ -1,14 +1,22 @@
 <!-- answer -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <H1> Stupid Coaching </H1>
+ <p class = "back"><%= link_to 'back ' , "/ask" %><p>
 
-<H1> Stupid Coaching </H1>
+  <p class = "question" ><%=  "Question : #{params[:question]}"  %></p>
+  <% if params[:question] == 'I am going to work' %>
+  <p class = "answer" ><%= "Answer : Great !!"  %></p>
+  <% elsif params[:question].chars.last == '?' %>
+  <p class = "answer"><%= "Answer : Silly question, get dressed and go to work! "  %></p>
+  <% else %>
+  <p class = "answer"><%= "Answer : I don't care, get dressed and go to work! "  %></p>
+  <% end %>
+  </body>
 
-<p class ="question" > Question : <%= params[:question] %></p>
-
-<% if params[:question] == 'I am going to work' %>
-<p class = "answer" ><%= "Answer : Great !!"  %></p>
-<% elsif params[:question].chars.last == '?' %>
-<p class = "answer"><%= "Answer : Silly question, get dressed and go to work! "  %></p>
-<% else %>
-<p class = "answer"><%= "Answer : I don't care, get dressed and go to work! "  %></p>
-<% end %>
-
+</body>
+</html>

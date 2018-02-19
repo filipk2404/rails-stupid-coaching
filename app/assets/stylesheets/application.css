@@ -30,19 +30,26 @@
    text-decoration: none;
  }
 
-.answer{
-font-family: Arial;
-color: green;
-font-size: 20px;
+ .answer{
+  font-family: Arial;
+  color: green;
+  font-size: 20px;
 }
 
 .question{
-font-family: Arial;
-color: blue;
-font-size: 20px;
+  font-family: Arial;
+  color: blue;
+  font-size: 20px;
 }
 
 
- h1 {
-     color: grey;
-     background-color : light-grey; }
+h1 {
+ color: grey;
+ background-color : light-grey; }
+
+
+ .back{
+   font-family: Arial;
+   color-background : blue;
+   font-size: 20px;
+ }
